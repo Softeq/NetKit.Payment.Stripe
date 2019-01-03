@@ -4,7 +4,7 @@ Softeq.NetKit.Payment.Stripe is a RESTful microservice that enables payment mana
 API is written in ```Asp.Net Core 2.0``` and protected with ```OAuth2``` protocol. 
 ```Swashbuckle``` is enabled to provide API consumers with the documentation.
 
-###APIs
+### APIs
 
 Service exposes the following APIs:
 
