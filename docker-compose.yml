@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  Softeq.NetKit.payments:
+    image: ${DOCKER_REGISTRY}softeqnetkitpayments
+    build:
+      context: .
+      dockerfile: Softeq.NetKit.Payments/Dockerfile

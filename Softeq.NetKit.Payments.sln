@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softeq.NetKit.Payments.Service.Test", "Softeq.NetKit.Payments.Service.Test\Softeq.NetKit.Payments.Service.Test.csproj", "{05C7C6C0-B2BA-4804-B224-86450CE37C48}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softeq.NetKit.Payments", "Softeq.NetKit.Payments\Softeq.NetKit.Payments.csproj", "{D222203F-F4EE-49E7-B136-5EA6DCC13639}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softeq.NetKit.Payments.Data", "Softeq.NetKit.Payments.Data\Softeq.NetKit.Payments.Data.csproj", "{A4ECA02F-6368-4BDF-890D-B6BCC79BA74E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softeq.NetKit.Payments.Service", "Softeq.NetKit.Payments.Service\Softeq.NetKit.Payments.Service.csproj", "{4BBA7B9B-2499-462F-8EF3-E9CFB324CFFF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Softeq.NetKit.Payments.SQLRepository", "Softeq.NetKit.Payments.SQLRepository\Softeq.NetKit.Payments.SQLRepository.csproj", "{73C94179-D407-4974-904A-6D2139AAED7C}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{8F4785B1-E846-46D1-87D5-9B3C9F334E5F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{781DB40B-115C-483A-8855-ED8C9FB10B4F}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05C7C6C0-B2BA-4804-B224-86450CE37C48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05C7C6C0-B2BA-4804-B224-86450CE37C48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05C7C6C0-B2BA-4804-B224-86450CE37C48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05C7C6C0-B2BA-4804-B224-86450CE37C48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D222203F-F4EE-49E7-B136-5EA6DCC13639}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D222203F-F4EE-49E7-B136-5EA6DCC13639}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D222203F-F4EE-49E7-B136-5EA6DCC13639}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D222203F-F4EE-49E7-B136-5EA6DCC13639}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4ECA02F-6368-4BDF-890D-B6BCC79BA74E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4ECA02F-6368-4BDF-890D-B6BCC79BA74E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4ECA02F-6368-4BDF-890D-B6BCC79BA74E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4ECA02F-6368-4BDF-890D-B6BCC79BA74E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BBA7B9B-2499-462F-8EF3-E9CFB324CFFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BBA7B9B-2499-462F-8EF3-E9CFB324CFFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BBA7B9B-2499-462F-8EF3-E9CFB324CFFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BBA7B9B-2499-462F-8EF3-E9CFB324CFFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C94179-D407-4974-904A-6D2139AAED7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C94179-D407-4974-904A-6D2139AAED7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C94179-D407-4974-904A-6D2139AAED7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C94179-D407-4974-904A-6D2139AAED7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F4785B1-E846-46D1-87D5-9B3C9F334E5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F4785B1-E846-46D1-87D5-9B3C9F334E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F4785B1-E846-46D1-87D5-9B3C9F334E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F4785B1-E846-46D1-87D5-9B3C9F334E5F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BE8611C-835B-44E9-8EE1-55F81D8ED505}
+	EndGlobalSection
+EndGlobal

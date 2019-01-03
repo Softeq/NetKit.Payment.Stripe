@@ -1,0 +1,62 @@
+{
+  "Users": [
+    {
+      "Id": "0c8f803d-668e-4d95-aee2-1a0467f9ba5c",
+      "Delinquent": "False",
+      "StripeCustomerId": "cus_Ci2LHKWjPi70QX"
+    },
+    {
+      "Id": "11a07ada-c3e6-4e6c-935c-7a9207d5a8b3",
+      "Delinquent": "False",
+      "StripeCustomerId": "cus_CiN8cL9Q4OVhiC"
+    }
+  ],
+  "CreditCards": [
+    {
+      "Id": "bfc9ba13-4d20-4fb6-823c-6bd989d74070",
+      "CardCountry": "US",
+      "ExpirationMonth": "2",
+      "ExpirationYear": "2022",
+      "Fingerprint": "ERCxa7J9Wydph6FD",
+      "Last4": "4242",
+      "SaasUserId": "d865176a-f08f-4123-8db2-ec2e35f4d4a4",
+      "StripeCustomerId": "cus_Ci2LHKWjPi70QX",
+      "StripeId": "card_1CIcIRKnOAUQyqMU2eaVY9Of",
+      "UserId": "0c8f803d-668e-4d95-aee2-1a0467f9ba5c"
+    },
+    {
+      "Id": "8ab4c732-c838-4fa5-97ef-a58d3b9c6e77",
+      "CardCountry": "US",
+      "ExpirationMonth": "10",
+      "ExpirationYear": "2018",
+      "Fingerprint": "ERCxa7J9Wydph6FD",
+      "Last4": "4242",
+      "SaasUserId": "07c3b9dc-1813-410f-89b0-c12cde00de66",
+      "StripeCustomerId": "cus_CiN8cL9Q4OVhiC",
+      "StripeId": "card_1CIwR5KnOAUQyqMUoUiFNk0S",
+      "UserId": "11a07ada-c3e6-4e6c-935c-7a9207d5a8b3"
+    }
+  ], 
+  "SubscriptionPlans": [
+    {
+      "Id": "8ab4f432-c838-4fa5-97ef-a58d3b9c6e77",
+      "StripeId": "1801207626762049",
+      "Currency": "USD",
+      "Status": "Enabled",
+      "Interval": "Monthly",
+      "Name": "test",
+      "Price": "22.00",
+      "TrialPeriodInDays": "20"
+    },
+    {
+      "Id": "8ab4c732-c839-4fa5-97ef-b38d3b9c6e77",
+      "StripeId": "plan_CfRT2dCEcYnMu0",
+      "Currency": "DKK",
+      "Status": "Enabled",
+      "Interval": "Yearly",
+      "Name": "test2",
+      "Price": "10.00",
+      "TrialPeriodInDays": "90"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "SubscriptionPlans": [
+    {
+      "StripeId": "1801207626762049",
+      "Currency": "USD",
+      "Status": "Enabled",
+      "Interval": "Monthly",
+      "Name": "test",
+      "Price": "22.00",
+      "TrialPeriodInDays": "20"
+    },
+    {
+      "StripeId": "plan_CfRT2dCEcYnMu0",
+      "Currency": "DKK",
+      "Status": "Enabled",
+      "Interval": "Yearly",
+      "Name": "test2",
+      "Price": "10.00",
+      "TrialPeriodInDays": "90"
+    }
+  ]
+}

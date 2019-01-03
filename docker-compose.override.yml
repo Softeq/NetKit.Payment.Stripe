@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  Softeq.NetKit.payments:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:80
+      - ASPNETCORE_HTTPS_PORT=52060
+    ports:
+      - "52060:80"
