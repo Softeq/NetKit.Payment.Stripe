@@ -1,6 +1,10 @@
 # Softeq.NetKit.Payment.Stripe
 
-Softeq.NetKit.Payment.Stripe is a RESTful microservice that enables payment management around Stripe payment gateway. API is written in Asp.Net Core 2.0 and protected with OAuth2 protocol.
+Softeq.NetKit.Payment.Stripe is a RESTful microservice that enables payment management around Stripe payment gateway. 
+API is written in ```Asp.Net Core 2.0``` and protected with ```OAuth2``` protocol. 
+```Swashbuckle``` is enabled to provide API consumers with the documentation.
+
+###APIs
 
 Service exposes the following APIs:
 
@@ -9,11 +13,9 @@ Service exposes the following APIs:
 3. ```Subscriptions``` API to manage customer's subscriptions;
 4. ```Subscription Plans``` API to manage customer's subscription plans;
 5. ```Invoices``` API to manage customer's invoices;
-6. ```Charge``` API to create or get customer's charge;
+6. ```Charge``` API to create or get customer's charges.
 
-```Swashbuckle``` to provide documentation.
-
-### Configure
+### Configuration
 
 Update ```appsettings.json``` by specifying the following settings: 
 1. Set MS SQL database connection string in ```ConnectionStrings:DefaultConnection```;
