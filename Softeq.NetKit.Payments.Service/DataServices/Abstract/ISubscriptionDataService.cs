@@ -67,7 +67,7 @@ namespace Softeq.NetKit.Payments.Service.DataServices.Abstract
         /// <param name="subscriptionEnDateTime">The subscription en date time.</param>
         /// <returns></returns>
         /// <exception cref="NotFoundException"></exception>
-        Task EndSubscriptionAsync(string subscriptionId, DateTime subscriptionEnDateTime);
+        Task CancelSubscriptionAsync(string subscriptionId, DateTime subscriptionEnDateTime);
 
         /// <summary>
         /// Updates the subscription asynchronous.
@@ -90,6 +90,6 @@ namespace Softeq.NetKit.Payments.Service.DataServices.Abstract
         /// </summary>
         /// <param name="userId">The user identifier.</param>
         /// <returns></returns>
-        Task DeleteSubscriptionsAsync(string userId);
+        Task CancelSubscriptionsAsync(string userId);
     }
 }

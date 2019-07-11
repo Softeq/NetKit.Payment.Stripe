@@ -62,6 +62,6 @@ namespace Softeq.NetKit.Payments.Service.Services.Abstract
         /// </summary>
         /// <param name="request">The end subscriptions request.</param>
         /// <returns></returns>
-        Task DeleteSubscriptionsAsync(EndSubscriptionsRequest request);
+        Task CancelSubscriptionsAsync(EndSubscriptionsRequest request);
     }
 }

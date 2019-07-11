@@ -102,7 +102,7 @@ namespace Softeq.NetKit.Payments.Service.Services
             {
                 var subscription = await _subscriptionDataService.UserActiveSubscriptionAsync(request.UserId, request.SubscriptionId);
                 var subscriptionEnd = await _subscriptionProvider.EndSubscriptionAsync(subscription.StripeId, request.CancelAtPeriodEnd);
-                await _subscriptionDataService.EndSubscriptionAsync(request.SubscriptionId, subscriptionEnd);
+                await _subscriptionDataService.CancelSubscriptionAsync(request.SubscriptionId, subscriptionEnd);
                 return subscriptionEnd;
             }
             catch (StripeException ex)
@@ -230,14 +230,14 @@ namespace Softeq.NetKit.Payments.Service.Services
         /// </summary>
         /// <param name="request">The end subscriptions identifier.</param>
         /// <returns></returns>
-        public async Task DeleteSubscriptionsAsync(EndSubscriptionsRequest request)
+        public async Task CancelSubscriptionsAsync(EndSubscriptionsRequest request)
         {
             try
             {
                 // Cancel subscriptions in Stripe
                 await EndSubscriptionsAsync(new EndSubscriptionsRequest(request.UserId, request.CustomerId, request.CancelAtPeriodEnd));
                 // Delete from Db
-                await _subscriptionDataService.DeleteSubscriptionsAsync(request.UserId);
+                await _subscriptionDataService.CancelSubscriptionsAsync(request.UserId);
             }
             catch (StripeException ex)
             {

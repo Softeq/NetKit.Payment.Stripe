@@ -70,7 +70,7 @@ namespace Softeq.NetKit.Payments.Controllers
         {
             var userId = GetCurrentUserId();
             Logger.Event("DeleteSubscription").With.Message("UserId: {userId}", userId).AsInformation();
-            var res = await _subscriptionsService.DeleteSubscriptionAsync(new EndSubscriptionRequest(subscriptionId, userId, request.CancelAtPeriodEnd));
+            var res = await _subscriptionsService.CancelSubscriptionAsync(new EndSubscriptionRequest(subscriptionId, userId, request.CancelAtPeriodEnd));
             return Ok(res);
         }
 
@@ -81,7 +81,7 @@ namespace Softeq.NetKit.Payments.Controllers
         {
             var userId = GetCurrentUserId();
             Logger.Event("DeleteSubscriptions").With.Message("UserId: {userId}", userId).AsInformation();
-            await _subscriptionsService.DeleteSubscriptionsAsync(new EndSubscriptionsRequest(userId, request.CustomerId, request.CancelAtPeriodEnd));
+            await _subscriptionsService.CancelSubscriptionsAsync(new EndSubscriptionsRequest(userId, request.CustomerId, request.CancelAtPeriodEnd));
             return Ok();
         }
 
@@ -91,7 +91,7 @@ namespace Softeq.NetKit.Payments.Controllers
         public async Task<IActionResult> GetActiveUserSubscriptionsAsync()
         {
             var userId = GetCurrentUserId();
-            var res = await _subscriptionsService.UserActiveSubscriptionsAsync(userId);
+            var res = await _subscriptionsService.GetUserActiveSubscriptionsAsync(userId);
             return Ok(res);
         }
 

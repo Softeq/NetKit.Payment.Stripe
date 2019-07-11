@@ -101,7 +101,7 @@ namespace Softeq.NetKit.Payments.Service.DataServices.Storage
         }
 
         /// <inheritdoc />
-        public async Task EndSubscriptionAsync(string subscriptionId, DateTime subscriptionEnDateTime)
+        public async Task CancelSubscriptionAsync(string subscriptionId, DateTime subscriptionEnDateTime)
         {
             var subscription = await UnitOfWork.SubscriptionRepository.Query(x => x.StripeId == subscriptionId)
                 .FirstOrDefaultAsync();
@@ -135,7 +135,7 @@ namespace Softeq.NetKit.Payments.Service.DataServices.Storage
         }
 
         /// <inheritdoc />
-        public async Task DeleteSubscriptionsAsync(string userId)
+        public async Task CancelSubscriptionsAsync(string userId)
         {
             var subscriptions = await UnitOfWork.SubscriptionRepository.Query(x => x.SaasUserId == userId &&
                                                                                    x.Status != "canceled" && x.Status != "unpaid" &&

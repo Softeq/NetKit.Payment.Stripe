@@ -79,7 +79,7 @@ namespace Softeq.NetKit.Payments.Service.Test.Services
             await _subscriptionDataService.SubscribeUserAsync(SaasUserId, _userId, StripeSubscriptionPlanId);
             var subscription = (await _subscriptionDataService.UserSubscriptionsAsync(SaasUserId)).First();
             var endDateTime = DateTime.UtcNow.AddDays(-2);
-            await _subscriptionDataService.EndSubscriptionAsync(subscription.StripeId, endDateTime);
+            await _subscriptionDataService.CancelSubscriptionAsync(subscription.StripeId, endDateTime);
             var updatedSubscription = await _subscriptionDataService.FindByIdAsync(subscription.StripeId);
             Assert.NotNull(updatedSubscription);
             Assert.Equal(updatedSubscription.End, endDateTime);
@@ -141,7 +141,7 @@ namespace Softeq.NetKit.Payments.Service.Test.Services
             subscription.TrialEnd = DateTime.UtcNow.AddDays(5);
             await _subscriptionDataService.UpdateSubscriptionAsync(subscription);
             var previousUserActiveSubscriptions = await _subscriptionDataService.UserActiveSubscriptionsAsync(SaasUserId);
-            await _subscriptionDataService.DeleteSubscriptionsAsync(SaasUserId);
+            await _subscriptionDataService.CancelSubscriptionsAsync(SaasUserId);
             var currentUserActiveSubscriptions = await _subscriptionDataService.UserActiveSubscriptionsAsync(SaasUserId);
             Assert.True(previousUserActiveSubscriptions.Count > currentUserActiveSubscriptions.Count);
         }
